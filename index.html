@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Numnao | ไลฟ์สดจาก Facebook และ Youtube</title>
+  <style>
+    body { background-color: #000; color: white; text-align: center; font-family: sans-serif; }
+    .social a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #4267B2;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .fb-page {
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔴 กำลังถ่ายทอดสดจาก Facebook</h1>
+
+  <div class="social">
+    <a href="https://facebook.com/eakapob.fb" target="_blank">ไปที่เพจ</a>
+  </div>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v18.0"
+    nonce="xyz"></script>
+
+  <!-- แสดง live สด ล่าสุดจากเพจ -->
+  <div class="fb-page"
+    data-href="https://www.facebook.com/eakapob.fb"
+    data-tabs="timeline"
+    data-width="500"
+    data-height="600"
+    data-small-header="false"
+    data-adapt-container-width="true"
+    data-hide-cover="false"
+    data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/eakapob.fb" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/eakapob.fb">Facebook ของผม</a>
+    </blockquote>
+  </div>
+
+  <p>📌 วิดีโอไลฟ์จะขึ้นตรงนี้อัตโนมัติเมื่อคุณผมกำลังถ่ายทอดสด</p>
+</body>
+</html>
